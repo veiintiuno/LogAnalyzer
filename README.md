@@ -3,7 +3,7 @@ LogAnalyzer v1.0
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-![Version](https://img.shields.io/badge/Version-0.1-blue)
+![Version](https://img.shields.io/badge/Version-1.0-blue)
 
 A simple log file analyzer written in C, created as a learning project for cybersecurity basics.
 
