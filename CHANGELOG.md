@@ -16,3 +16,5 @@ All notable changes to LogAnalyzer will be documented in this file.
 - Single-file architecture (`main.c`)
 - Windows-compatible (PowerShell)
 - No external dependencies
+
+See [CHANGELOG.md](CHANGELOG.md) for version history and changes.
