@@ -11,20 +11,18 @@
 - Clean statistics display
                                                 (v2.1 added)
 
-### v3.0 - Interactive Menu
- **Planned** - Menu-driven interface
-- Switch-case menu system
-- Options: stats, list successful, list failed, debug view
-- Loop until exit
+```markdown
+##  v3.0 - Interactive Menu (COMPLETED)
+- Menu-driven interface with 5 options
+- Continue/exit control after operations
+- Multiple file readings with rewind()
 
-### v4.0 - IP Analysis  
- **Future** - Security features
-- Extract IP addresses
-- Detect suspicious IPs (multiple failures)
-- Export reports to file
+##  v4.0 - IP Analysis (IN DEVELOPMENT)
+- Extract IP addresses from log entries
+- Detect suspicious IPs (multiple failed attempts)
+- Basic security reporting
 
-### v5.0 - Advanced Features
- **Future** - Professional tool
+##  v5.0 - Advanced Features (PLANNED)
 - Time range filtering
-- Log file comparison
-- Real-time monitoring (basic)
+- Export reports to file
+- Configuration file support
