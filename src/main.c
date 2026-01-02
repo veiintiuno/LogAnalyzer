@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 #include "../inc/analyzer.h"
+#include "../inc/generator.h"
 
 int main() {
+    generar_logs_aleatorios(20);
     int verificar = 0;
     
     while(verificar == 0) {
@@ -75,7 +77,9 @@ int main() {
             while(fgets(linea, sizeof(linea), archivo)) {
                 printf("%s", linea);
             }
-        } else {
+        } else if (opcion == 6) {
+            generar_logs_aleatorios(20);
+        }else {
             printf("Opción inválida. Intente 1-5.\n");
         }
 
