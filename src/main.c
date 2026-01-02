@@ -8,11 +8,11 @@ int main() {
     int verificar = 0;
     
     while(verificar == 0) {
-        printf("=== BIENVENIDO A LOG ANALYZER V3.1 ===\n"); 
+        printf("\033[1;36m=== BIENVENIDO A LOG ANALYZER V3.1 ===\033[0m\n"); 
         FILE *archivo = fopen("logs/ejemplo.log", "r");
         
         if (archivo == NULL) {
-            printf("ERROR: Revise si la ruta que ha seleccionado existe \n");
+            printf("\033[1;31mERROR: Revise si la ruta que ha seleccionado existe\033[0m \n");
             return 1; 
         }
 
@@ -20,7 +20,7 @@ int main() {
         printf("2. List successful logins\n");
         printf("3. List failed logins\n");
         printf("4. Show all logs\n");
-        printf("5. Exit\n");
+        printf("\033[1;31m5. Exit\033[0m\n");
         printf("6. Regenerate random logs\n");
         printf("Choice: "); 
         int opcion;
