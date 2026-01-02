@@ -1,18 +1,18 @@
-LogAnalyzer v1.0
+LogAnalyzer 
 
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-![Version](https://img.shields.io/badge/Version-1.0-blue)
+![Version](https://img.shields.io/badge/Version-2.1-blue)
 
 A simple log file analyzer written in C, created as a learning project for cybersecurity basics.
 
-## Features (v1.0)
+## Features (v2.1)
 
-- **File Reading**: Opens and reads log files from the `logs/` directory
-- **Line-by-line Processing**: Displays each log entry with line numbers
-- **Basic Statistics**: Counts total lines in the log file
-- **Error Handling**: Checks if files exist and provides clear error messages
+- **Login Statistics**: Counts successful vs failed logins
+- **Failure Percentage**: Calculates and displays failure rate
+- **Zero-Division Protection**: Prevents crash on empty files
+- **File Reading**: Reads and processes log files
 
 ## Project Structure
 
