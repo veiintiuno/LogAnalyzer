@@ -11,18 +11,17 @@
 - Clean statistics display
                                                 (v2.1 added)
 
-```markdown
-##  v3.0 - Interactive Menu (COMPLETED)
-- Menu-driven interface with 5 options
-- Continue/exit control after operations
-- Multiple file readings with rewind()
+##  v3.1 - Random Log Generator (COMPLETED)
+- Automatic generation of random logs on startup
+- Regenerate option in menu
+- Realistic random data (timestamps, outcomes, IPs)
 
-##  v4.0 - IP Analysis (IN DEVELOPMENT)
-- Extract IP addresses from log entries
-- Detect suspicious IPs (multiple failed attempts)
+##  v4.0 - IP Analysis (NEXT)
+- Extract and analyze IP addresses from logs
+- Detect suspicious patterns (multiple failures from same IP)
 - Basic security reporting
 
-##  v5.0 - Advanced Features (PLANNED)
+##  v5.0 - Advanced Features
 - Time range filtering
-- Export reports to file
+- Export functionality
 - Configuration file support

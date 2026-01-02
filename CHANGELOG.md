@@ -4,6 +4,17 @@ All notable changes to LogAnalyzer will be documented in this file.
 
 ## Version History
 
+## v3.1 - 2024-01-XX
+### Added
+- Random log generator module (generator.h/.c)
+- Automatic generation of 20 random logs on program start
+- Option to regenerate logs from menu
+- Random timestamps, success/failure ratios, IP addresses
+
+### Changed
+- Updated Makefile to include generator.c
+- ejemplo.log now contains randomly generated data each execution
+
 ## v3.0 - 2026-01-02
 ### Added
 - Interactive menu system

@@ -8,7 +8,7 @@ int main() {
     int verificar = 0;
     
     while(verificar == 0) {
-        printf("=== BIENVENIDO A LOG ANALYZER V3.0 ===\n"); 
+        printf("=== BIENVENIDO A LOG ANALYZER V3.1 ===\n"); 
         FILE *archivo = fopen("logs/ejemplo.log", "r");
         
         if (archivo == NULL) {
@@ -20,7 +20,8 @@ int main() {
         printf("2. List successful logins\n");
         printf("3. List failed logins\n");
         printf("4. Show all logs\n");
-        printf("5. Exit\n");
+        printf("5. Regenerate random logs\n");
+        printf("6. Exit\n");
         printf("Choice: "); 
         int opcion;
         scanf("%d", &opcion); 
