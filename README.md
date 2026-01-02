@@ -36,13 +36,12 @@ gcc src/main.c -o loganalyzer.exe
 
 example output
 
-=== LOG ANALYZER V1.0 ===
+=== LOG ANALYZER v2.1 ===
 Exito, se ha abierto el archivo correctamente..
-Linea 1: 2024-01-01 10:00 - Login exitoso - IP: 192.168.1.10
-Linea 2: 2024-01-01 10:01 - Login fallido - IP: 192.168.1.15
-Linea 3: 2024-01-01 10:02 - Login fallido - IP: 192.168.1.15
-Linea 4: 2024-01-01 10:03 - Login fallido - IP: 192.168.1.20
 === TOTAL: 4 lineas ===
+Logs exitosos: 1
+Logs fallidos: 3
+Porcentaje de fallos: 75.0%
 
 This project helped me learn:
 

@@ -1,16 +1,5 @@
  Project Roadmap
 
-## Version History
-## v2.1 - 2026-01-02
-### Added
-- Failure percentage calculation
-- Protection against division by zero for empty log files
-
-## v2.0 - 2026-01-02
-### Added
-- Success/failure login counters using `strstr()`
-- Clean statistics output
-
 ### v1.0 - Basic Reader
  **Done** - Reads log files, displays lines, counts total
 
