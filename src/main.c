@@ -4,7 +4,8 @@
 int main() {
     printf("=== LOG ANALYZER V1.0 ===\n");
     FILE *archivo = fopen("logs/ejemplo.log", "r");
-
+    int exitoso = 0;
+    int fallidos = 0;
     if (archivo == NULL) {
         printf("ERROR: Revise si la ruta que ha seleccionado existe \n");
         return 1;
@@ -15,9 +16,16 @@ int main() {
     int contador = 0;
     while (fgets(linea, sizeof(linea), archivo) != NULL) {
         contador++;
-        printf("Linea %d: %s\n", contador, linea);
+        if (strstr(linea , "exitoso") != NULL) {
+            exitoso ++;
+        }
+        if (strstr(linea , "fallido") != NULL) {
+            fallidos ++;
+        }
     }
     printf("=== TOTAL: %d lineas ===\n", contador);
+    printf("Logs exitosos: %d\n", exitoso);
+    printf("Logs fallidos: %d\n", fallidos);
 
     fclose(archivo);
     return 0;
