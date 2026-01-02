@@ -3,16 +3,22 @@ LogAnalyzer
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-![Version](https://img.shields.io/badge/Version-2.1-blue)
+![Version](https://img.shields.io/badge/Version-3.0-blue)
 
 A simple log file analyzer written in C, created as a learning project for cybersecurity basics.
 
-## Features (v2.1)
+## Features (v3.0)
 
-- **Login Statistics**: Counts successful vs failed logins
-- **Failure Percentage**: Calculates and displays failure rate
-- **Zero-Division Protection**: Prevents crash on empty files
-- **File Reading**: Reads and processes log files
+- **Interactive Menu**: User-friendly command-line interface
+- **Multiple Operations**: 
+  - Show login statistics (success/failure counts, percentages)
+  - List successful login attempts
+  - List failed login attempts  
+  - Display all log entries
+- **Session Control**: Continue or exit after each operation
+- **Login Analysis**: Counts successful vs failed attempts with percentage
+- **Modular Architecture**: Separated logic into analyzer.h/analyzer.c
+- **File Reading**: Reads and processes log files with error handling
 
 ## Project Structure
 
@@ -36,12 +42,24 @@ gcc src/main.c -o loganalyzer.exe
 
 example output
 
-=== LOG ANALYZER v2.1 ===
-Exito, se ha abierto el archivo correctamente..
-=== TOTAL: 4 lineas ===
-Logs exitosos: 1
-Logs fallidos: 3
-Porcentaje de fallos: 75.0%
+=== BIENVENIDO A LOG ANALYZER V3.0 ===
+1. Show statistics
+2. List successful logins
+3. List failed logins
+4. Show all logs
+5. Exit
+Choice: _
+
+Choice: 1
+=== STATISTICS ===
+Total logs entries: 15
+Successful logins: 10
+Failed logins: 5
+Failure rate: 33.3%
+
+¿Continuar? (s/n): s
+
+(menu appears again...)
 
 This project helped me learn:
 
@@ -75,6 +93,13 @@ Share your own learning projects
 
  License
 Educational purpose - free to use and modify.
+Usage
+
+### Compilation
+```bash
+make
+# or manually:
+gcc src/main.c src/analyzer.c -o loganalyzer
 
 ##  Author
 **Veiintiuno**  
