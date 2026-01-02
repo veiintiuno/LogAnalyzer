@@ -20,8 +20,8 @@ int main() {
         printf("2. List successful logins\n");
         printf("3. List failed logins\n");
         printf("4. Show all logs\n");
-        printf("5. Regenerate random logs\n");
-        printf("6. Exit\n");
+        printf("5. Exit\n");
+        printf("6. Regenerate random logs\n");
         printf("Choice: "); 
         int opcion;
         scanf("%d", &opcion); 
@@ -85,7 +85,7 @@ int main() {
         }
 
         // Preguntar si continuar SOLO para opciones 1-4
-        if (opcion >= 1 && opcion <= 4) {
+        if (opcion >= 1 && opcion <= 4 || opcion == 6) {
             char continuar;
             printf("\n¿Continuar? (s/n): ");
             scanf(" %c", &continuar);  
