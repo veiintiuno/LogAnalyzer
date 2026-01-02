@@ -3,10 +3,34 @@
 #include "../inc/analyzer.h"
 #include "../inc/generator.h"
 
+void mostrar_splash() {
+   
+    printf("\033[1;36m");  
+    printf("  __      __         _       _   _       \n");
+    printf("  \\ \\    / /        (_)     | | (_)      \n");
+    printf("   \\ \\  / /__ _ __   _ _ __ | |_ _  ___  \n");
+    printf("    \\ \\/ / _ \\ '_ \\ | | '_ \\| __| |/ _ \\ \n");
+    printf("     \\  /  __/ | | || | | | | |_| | (_) |\n");
+    printf("      \\/ \\___|_| |_|/ |_| |_|\\__|_|\\___/ \n");
+    printf("                   |__/                   \n");
+    
+    
+    printf("\033[1;33m");  
+    printf("           Log Analysis Tool v3.1\n");
+    printf("\033[0m\n");   
+    
+    
+    printf("Press ENTER to start...");
+    
+   
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF) { }
+}
+
 int main() {
     generar_logs_aleatorios(20);
+    mostrar_splash();
     int verificar = 0;
-    
     while(verificar == 0) {
         printf("\033[1;36m=== BIENVENIDO A LOG ANALYZER V3.1 ===\033[0m\n"); 
         FILE *archivo = fopen("logs/ejemplo.log", "r");
