@@ -14,7 +14,7 @@ void mostrar_splash() {
     printf("      \\/ \\___|_| |_|/ |_| |_|\\__|_|\\___/ \n");
     printf("                   |__/                   \n");
     printf("\033[1;33m");  
-    printf("           Log Analysis Tool v3.1\n");
+    printf("           Log Analysis Tool v3.2\n");
     printf("\033[0m\n");   
 }
 

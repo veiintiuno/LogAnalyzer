@@ -16,6 +16,12 @@
 - Regenerate option in menu
 - Realistic random data (timestamps, outcomes, IPs)
 
+### v3.2 - UI Enhancement & Performance (CURRENT)
+- Progress bar for log generation
+- Improved startup sequence
+- 1000 logs for better statistics
+- Enhanced visual feedback
+
 ##  v4.0 - IP Analysis (NEXT)
 - Extract and analyze IP addresses from logs
 - Detect suspicious patterns (multiple failures from same IP)

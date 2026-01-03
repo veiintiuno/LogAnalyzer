@@ -3,28 +3,40 @@ LogAnalyzer
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-![Version](https://img.shields.io/badge/Version-3.1-blue)
+![Version](https://img.shields.io/badge/Version-3.2-blue)
 
 A simple log file analyzer written in C, created as a learning project for cybersecurity basics.
 
-## Features (v3.1)
+## LogAnalyzer v3.2
 
-- **Interactive Menu**: User-friendly CLI with 6 options
-- **Random Log Generation**: Creates 20 unique log entries each run
-- **Live Statistics**: Success/failure counts with percentage
-- **Log Filtering**: View successful, failed, or all attempts
+A sophisticated log analysis tool written in C with interactive menu, random log generation, and professional terminal UI.
+
+##  Features (v3.2)
+
+- **Interactive Menu**: 6-option CLI with color-coded interface
+- **Random Log Generation**: Creates 1000 unique log entries with visual progress bar
+- **Live Statistics**: Success/failure counts with percentage calculations
+- **Log Filtering**: View successful, failed, or all login attempts
 - **Regeneration**: Generate new random data anytime
+- **Professional UI**: ASCII art splash screen, progress bars, timed effects
 - **Modular Architecture**: Separated analyzer, generator, and main logic
 
 ## Project Structure
 
 LogAnalyzer/
-├── logs/ # Log files directory
-│ └── ejemplo.log # Example log file
-├── src/ # Source code
-│ └── main.c # Main program
-├── README.md # This file
-└── (future: inc/, Makefile, analyzer.c)
+├── inc/
+│   ├── analyzer.h      # Analysis functions
+│   └── generator.h     # Random log generation
+├── src/
+│   ├── analyzer.c      # Statistics and analysis
+│   ├── generator.c     # Random log creation with progress bar
+│   └── main.c          # Interactive menu and UI
+├── logs/
+│   └── ejemplo.log     # Generated log file
+├── Makefile            # Build automation
+├── CHANGELOG.md        # Version history
+├── ROADMAP.md          # Development plan
+└── README.md           # This file
 
 Installation & Usage
 
@@ -32,30 +44,6 @@ Installation & Usage
 - GCC compiler (MinGW on Windows)
 - Basic command line knowledge
 
-### Compilation
-```bash
-gcc src/main.c -o loganalyzer.exe
-
-example output
-
-=== BIENVENIDO A LOG ANALYZER V3.0 ===
-1. Show statistics
-2. List successful logins
-3. List failed logins
-4. Show all logs
-5. Exit
-Choice: _
-
-Choice: 1
-=== STATISTICS ===
-Total logs entries: 15
-Successful logins: 10
-Failed logins: 5
-Failure rate: 33.3%
-
-¿Continuar? (s/n): s
-
-(menu appears again...)
 
 This project helped me learn:
 
@@ -95,15 +83,28 @@ Educational purpose - free to use and modify.
 make
 ./loganalyzer
 
-=== BIENVENIDO A LOG ANALYZER V3.1 ===
-[Generating 20 random logs... Done!]
 
+  __      __         _       _   _       
+  \ \    / /        (_)     | | (_)      
+   \ \  / /__ _ __   _ _ __ | |_ _  ___  
+    \ \/ / _ \ '_ \ | | '_ \| __| |/ _ \ 
+     \  /  __/ | | || | | | | |_| | (_) |
+      \/ \___|_| |_|/ |_| |_|\__|_|\___/ 
+                   |__/                   
+           Log Analysis Tool v3.2
+
+Inicializando sistema de logs...
+Generando logs: [==========>] 100% (1000/1000)
+
+Press ENTER para acceder al menú...
+
+=== BIENVENIDO A LOG ANALYZER V3.2 ===
 1. Show statistics
 2. List successful logins
 3. List failed logins
 4. Show all logs
-5. Regenerate random logs  # NEW
-6. Exit
+5. Exit
+6. Regenerate random logs
 Choice: _
 
 ##  Author
