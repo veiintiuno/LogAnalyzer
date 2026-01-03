@@ -30,4 +30,4 @@
 ##  v5.0 - Advanced Features
 - Time range filtering
 - Export functionality
-- Configuration file support
+- Configuration file support.

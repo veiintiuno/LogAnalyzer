@@ -22,7 +22,6 @@ A sophisticated log analysis tool written in C with interactive menu, random log
 - **Modular Architecture**: Separated analyzer, generator, and main logic
 
 ## Project Structure
-
 LogAnalyzer/
 ├── inc/
 │   ├── analyzer.h      # Analysis functions

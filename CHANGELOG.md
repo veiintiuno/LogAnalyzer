@@ -1,5 +1,4 @@
 ## **`CHANGELOG.md` ACTUALIZADO:**
-
 # Changelog
 
 All notable changes to LogAnalyzer will be documented in this file.
