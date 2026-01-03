@@ -3,7 +3,7 @@
 
 All notable changes to LogAnalyzer will be documented in this file.
 
-## [v3.2] - 2024-01-XX
+## v3.2 - 2026-01-02
 ### Added
 - Visual progress bar for log generation
 - Improved startup sequence: splash screen → progress → menu
@@ -19,7 +19,7 @@ All notable changes to LogAnalyzer will be documented in this file.
 - Proper Enter handling after initialization
 - Memory and file handling in regeneration from menu
 
-## [v3.1] - 2024-01-XX
+## v3.1
 ### Added
 - Random log generator module (generator.h/generator.c)
 - Automatic generation of 20 random logs on program start
@@ -30,7 +30,7 @@ All notable changes to LogAnalyzer will be documented in this file.
 - Updated Makefile to include generator.c
 - ejemplo.log now contains randomly generated data each execution
 
-## [v3.0] - 2024-01-XX
+## v3.0 
 ### Added
 - Interactive menu system with 6 options
 - Options: statistics, list successful/failed logins, show all logs, exit
@@ -42,7 +42,7 @@ All notable changes to LogAnalyzer will be documented in this file.
 - Improved user experience with rewind() for multiple file readings
 - Better error handling for invalid options
 
-## [v2.1] - 2024-01-XX
+## v2.1
 ### Added
 - Modular percentage calculation function
 - Division by zero protection
@@ -52,13 +52,13 @@ All notable changes to LogAnalyzer will be documented in this file.
 - Updated compilation to include analyzer.c
 - Improved code organization for future features
 
-## [v2.0] - 2024-01-XX
+## v2.0
 ### Added
 - Success/failure login counters using `strstr()`
 - Clean statistics output
 - Basic log analysis functionality
 
-## [v1.0] - 2024-01-XX
+## v1.0
 ### Added
 - First functional version
 - File reading with `fopen()`, `fgets()`, `fclose()`
